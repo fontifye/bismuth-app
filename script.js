@@ -44,6 +44,7 @@ const tosCancel = document.getElementById("tosCancel");
 
 function openTosModal(href) {
     pendingDownload = href;
+    if (href) sessionStorage.setItem("pendingDownload", href);
     tosCheck.checked = false;
     tosConfirm.disabled = true;
     tosModal.classList.add("active");
@@ -54,6 +55,7 @@ function closeTosModal() {
     tosModal.classList.remove("active");
     tosModal.setAttribute("aria-hidden", "true");
     pendingDownload = null;
+    sessionStorage.removeItem("pendingDownload");
 }
 
 document.querySelectorAll(".download-card").forEach(card => {
@@ -78,6 +80,15 @@ tosConfirm?.addEventListener("click", () => {
     a.remove();
     closeTosModal();
 });
+
+const savedDownload = sessionStorage.getItem("pendingDownload");
+if (savedDownload && tosModal) {
+    pendingDownload = savedDownload;
+    tosModal.classList.add("active");
+    tosModal.setAttribute("aria-hidden", "false");
+    tosCheck.checked = false;
+    tosConfirm.disabled = true;
+}
 
 document.querySelectorAll(".faq-item .faq-link").forEach(btn => {
     btn.addEventListener("click", () => {
