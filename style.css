@@ -588,9 +588,9 @@ em {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    max-width: 720px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
