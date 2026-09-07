@@ -520,8 +520,9 @@ em {
 
 .shot img {
     width: 100%;
-    height: auto;
+    height: 280px;
     object-fit: contain;
+    object-position: center;
     display: block;
     border-bottom: 1px solid var(--border);
     background: #050505;
@@ -1103,13 +1104,9 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .shot img {
-        height: auto;
-    }
+    .shot img,
     .shot-placeholder {
-        height: auto;
-        min-height: 160px;
-        padding: 40px 0;
+        height: 220px;
     }
 
     .feature-card {
