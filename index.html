@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bismuth Client — a Minecraft client.">
+    <meta name="theme-color" content="#000000">
+    <title>Bismuth Client</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise"></div>
+
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="#">
+            <img src="logo.png" alt="Bismuth Client">
+        </a>
+
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#downloads">Downloads</a>
+            <a href="#faq">FAQ</a>
+            <a href="tos.html">TOS</a>
+        </div>
+
+        <div class="nav-right">
+            <a class="nav-github" href="#" onclick="return false;">GitHub</a>
+            <a class="nav-download" href="#downloads">Download</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Features</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#faq">FAQ</a>
+        <a href="tos.html">TOS</a>
+        <a href="#downloads">Download</a>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-orb hero-orb-main"></div>
+            <div class="hero-orb hero-orb-small"></div>
+
+            <div class="hero-inner">
+                <div class="hero-logo">
+                    <img src="logo.png" alt="">
+                </div>
+
+                <div class="hero-tag">
+                    <span class="status-dot"></span>
+                    BISMUTH CLIENT · v0.1 · 1.8.x
+                </div>
+
+                <h1>reimagining<br><em>clients.</em></h1>
+
+                <p class="hero-desc">
+                    bismuth is a clean and lightweight 1.8.x minecraft client
+                    designed around a simple experience and a polished interface.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#downloads">
+                        Download Bismuth
+                        <span>↓</span>
+                    </a>
+                    <a class="btn btn-secondary" href="#features">
+                        Explore features
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <div><span class="check">✓</span> screenshare bypass</div>
+                    <div><span class="check">✓</span> undetected</div>
+                    <div><span class="check">✓</span> injectable</div>
+                </div>
+            </div>
+
+            <div class="scroll-hint">
+                <span>scroll to explore</span>
+                <i></i>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="features section" id="features">
+            <div class="section-heading reveal">
+                <span class="section-label">01 · features</span>
+                <h2>built to stay <em>simple.</em></h2>
+                <p>no clutter. no unnecessary noise. just bismuth.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card reveal">
+                    <div class="feature-icon">✦</div>
+                    <div>
+                        <h3>clean interface</h3>
+                        <p>a focused ui with everything where it should be.</p>
+                    </div>
+                    <span class="card-number">01</span>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon">◈</div>
+                    <div>
+                        <h3>lightweight</h3>
+                        <p>designed with a fast and responsive experience in mind.</p>
+                    </div>
+                    <span class="card-number">02</span>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon">↗</div>
+                    <div>
+                        <h3>two builds</h3>
+                        <p>choose between the regular jar and injectable client.</p>
+                    </div>
+                    <span class="card-number">03</span>
+                </article>
+            </div>
+
+            <div class="feature-shots reveal">
+                <figure class="shot">
+                    <img src="main.png" alt="Bismuth main menu">
+                    <figcaption>refined main menu — clean, dark, to the point.</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="menu.png" alt="Bismuth clickgui">
+                    <figcaption>fluid gui — customizable panels, smooth animations, built for 1.8.x.</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="injector.png" alt="Bismuth injector" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="shot-placeholder" style="display:none">
+                        <span>injector</span>
+                        <small>drop injector.png here</small>
+                    </div>
+                    <figcaption>clean injector — attaches without a trace.</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="blite.png" alt="Bismuth lite" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="shot-placeholder" style="display:none">
+                        <span>Coming Soon - Bismuth Lite</span>
+                        <small>screenshare-proof, ultra-light — drop blite.png here</small>
+                    </div>
+                    <figcaption>Coming Soon - Bismuth Lite — screenshare-proof, ultra-light build.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="download-section section" id="downloads">
+            <div class="download-glow"></div>
+
+            <div class="section-heading center reveal">
+                <span class="section-label">02 · downloads</span>
+                <h2>get <em>bismuth.</em></h2>
+                <p>choose the build that works for you. — for 1.8.x</p>
+            </div>
+
+            <div class="download-grid">
+                <a class="download-card featured" href="bismuth-0.1.jar" download>
+                    <div class="download-type">REGULAR BUILD</div>
+                    <div class="download-main">
+                        <div class="download-icon">↓</div>
+                        <h3>Download .Jar</h3>
+                        <p>Bismuth V0.1</p>
+                    </div>
+                </a>
+
+                <a class="download-card featured" href="injector.exe" download>
+                    <div class="download-type">INJECTABLE BUILD</div>
+                    <div class="download-main">
+                        <div class="download-icon">↓</div>
+                        <h3>Download Injector</h3>
+                        <p>Bismuth Injector | Lite + Hybrid</p>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="faq section" id="faq">
+            <div class="section-heading center reveal">
+                <span class="section-label">03 · faq</span>
+                <h2><em>commonly asked.</em></h2>
+                <p>tap to expand — one at a time.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-link"><span>Is Bismuth Safe?</span><i>+</i></button>
+                    <div class="faq-panel"><p>yes, we will not be taking any responsibility if you get banned, thats all up to you. the thing is that bismuth is mainly undetected and is able to bypass all major anticheats down to the extremely small and unknown ones as long as you can configure them. bismuth lite will also be able to completely bypass screenshares and with enough work most likely scanning tools like echo.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-link"><span>Is Bismuth Vibecoded?</span><i>+</i></button>
+                    <div class="faq-panel"><p>yes, we admit, bismuth was built with ai-assisted development while still being directed by humans. we understand that this may bring outrage since it is still "vibecoded slop" and we arent justifying our actions, but this was meant to be a private client anyways and we decided in the end game to make it public, free and open source.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-link"><span>What is the difference between the builds?</span><i>+</i></button>
+                    <div class="faq-panel"><p>the jar file is a drag and drop file that you put into your game, whereas the injector injects directly into minecraft as its running without replacing files. bismuth lite is the upcoming, lightweight screenshare bypass varient that is also injectable. the injector is also able to inject both the hybrid client and bismuth lite.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-link"><span>How do I install Bismuth?</span><i>+</i></button>
+                    <div class="faq-panel"><p>the installation of bismuth is extremely straightforward. go to the main part of our page, scroll down to the downloads page and pick whichever you want, whether you want the drag and drop jar file or the injector that can inject both the main client and the lite version.</p></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-main">
+            <div class="footer-left">
+                <a class="footer-brand" href="#">
+                    <img src="logo.png" alt="">
+                    <span>Bismuth Client</span>
+                </a>
+                <span class="footer-copy">BISMUTH CLIENT © 2026</span>
+            </div>
+
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#downloads">Downloads</a>
+                <a href="#faq">FAQ</a>
+                <a href="tos.html">TOS</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="tosModal" class="tos-overlay" aria-hidden="true">
+        <div class="tos-modal">
+            <h4>before you download</h4>
+            <p>you must agree to the <a href="tos.html">Terms of Service</a> to download bismuth — for 1.8.x, use at your own risk.</p>
+            <label class="tos-check">
+                <input type="checkbox" id="tosCheck">
+                <span>I agree to the <a href="tos.html" id="tosLink">TOS</a></span>
+            </label>
+            <div class="tos-actions">
+                <button id="tosCancel" class="btn btn-secondary">cancel</button>
+                <button id="tosConfirm" class="btn btn-primary" disabled>Agree & Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
